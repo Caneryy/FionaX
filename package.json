@@ -3,13 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "tools:registry": "node scripts/generate-tools.mjs",
+    "predev": "npm run tools:registry",
     "dev": "next dev",
+    "prebuild": "npm run tools:registry",
     "build": "next build",
     "start": "next start",
+    "prelint": "npm run tools:registry",
     "lint": "eslint .",
+    "pretest": "npm run tools:registry",
     "test": "vitest run",
+    "verify:tools": "node scripts/verify-tools.mjs",
+    "check": "npm run lint && npm run test && npm run verify:tools && npm run build",
+    "new:tool": "node scripts/new-tool.mjs",
+    "postinstall": "node scripts/generate-tools.mjs",
     "issues:create": "node scripts/create-github-issues.mjs",
-    "issues:dry-run": "node scripts/create-github-issues.mjs --dry-run"
+    "issues:dry-run": "node scripts/create-github-issues.mjs --dry-run",
+    "issues:drips": "node scripts/publish-fiona-season.mjs"
   },
   "dependencies": {
     "@stellar/stellar-sdk": "^13.3.0",

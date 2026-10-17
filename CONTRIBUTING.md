@@ -40,6 +40,12 @@ Prefer clear conventional-style commits:
 
 Start with [docs/ISSUES.md](./docs/ISSUES.md). Choose an issue with a difficulty level that matches your experience, then open a GitHub issue or comment on an existing one before starting larger work.
 
+Issues labeled `Stellar Wave` are part of the Drips 2026 season (see
+[docs/ISSUE_PUBLISHING.md](./docs/ISSUE_PUBLISHING.md)). Each one is a
+self-contained tool under `app/tools/<slug>/`; read
+[docs/TOOL_CONTRACT.md](./docs/TOOL_CONTRACT.md) before starting one, and run
+`npm run new:tool -- <slug> "<Title>"` to scaffold it.
+
 <!-- TODO(issue #18): Add GitHub issue templates and link them from this section once .github/ISSUE_TEMPLATE exists. -->
 
 ## Pull Requests
