@@ -1,0 +1,2 @@
+// Built from a public address whose Ed25519 bytes are all zero; no signer exists here.
+export const envelopeXdr = "AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
